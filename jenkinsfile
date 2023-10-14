@@ -1,0 +1,37 @@
+pipeline{
+    agent any
+    stages{
+        stage("my first stage"){
+            steps{
+                echo "devops is hard"
+            }
+        }
+        stage("my second stage"){
+            steps{
+                echo "devops is tricky"
+            }
+        }
+        stage("my third stage"){
+            steps{
+                echo "devops needs attention"
+            }
+        }
+        stage("my fouth stage"){
+            steps{
+                echo "divya loves assignment"
+            }
+        }
+        stage("my fifth stage"){
+            steps{
+                echo "you have no choice than to learn devops"
+            }
+        }
+        stage("my sixth stage"){
+            steps{
+                echo "i love devops"
+            }  
+        }
+    }
+}
+
+    
