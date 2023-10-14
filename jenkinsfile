@@ -31,6 +31,12 @@ pipeline{
                 echo "i love devops"
             }  
         }
+         stage("taking inputs from users"){
+            steps{
+                inputs("do you want to continue?")
+            }
+         }
+
         stage("my 7th stage "){
             steps{
                 echo "I will become expert in devops "
