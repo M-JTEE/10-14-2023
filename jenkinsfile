@@ -36,6 +36,12 @@ pipeline{
                 echo "I will become expert in devops "
             }
         }
+
+        stage("my 8th stage"){
+            steps{
+                echo "i will get high paid job in 3 months "
+            }
+        }
     }
 }
 
