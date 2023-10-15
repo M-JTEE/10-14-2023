@@ -50,7 +50,12 @@ pipeline{
         }
 
 
-post {
+    
+
+
+    }
+
+    post {
   unstable {
     mail bcc: '', body: 'Build is Unstable ', cc: '', from: '', replyTo: '', subject: 'Build is unstable', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
   }
@@ -64,8 +69,7 @@ post {
     mail bcc: '', body: 'this job is failed', cc: '', from: '', replyTo: '', subject: 'BUild is failed', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
   }
 }
-
-    }
+    
 }
 
     
