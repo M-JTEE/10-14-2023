@@ -48,6 +48,23 @@ pipeline{
                 echo "i will get high paid job in 3 months "
             }
         }
+
+
+post {
+  unstable {
+    mail bcc: '', body: 'Build is Unstable ', cc: '', from: '', replyTo: '', subject: 'Build is unstable', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
+  }
+  aborted {
+    mail bcc: '', body: 'this job id aborted', cc: '', from: '', replyTo: '', subject: 'Jenkins Aborted', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
+  }
+  success {
+   mail bcc: '', body: 'This build is suucessfull', cc: '', from: '', replyTo: '', subject: 'build is succesful', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
+  }
+  failure {
+    mail bcc: '', body: 'this job is failed', cc: '', from: '', replyTo: '', subject: 'BUild is failed', to: 'taffolavrence@gmail.com, mojekwutoyin@gmail.com,ogunibeolafusi@gmail.com'
+  }
+}
+
     }
 }
 
