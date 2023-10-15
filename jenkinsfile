@@ -45,7 +45,7 @@ pipeline{
 
         stage("my 8th stage"){
             steps{
-                echo "i will get high paid job in 3 months "
+                echoo "i will get high paid job in 3 months "
             }
         }
 
